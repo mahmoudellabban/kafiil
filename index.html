@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kafiil</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!--Navigation Bar Starts-->
+    <nav>
+      <div class="nav-container">
+        <div class="logo">
+          <img src="assets/main-logo2 1.svg" alt="logo" />
+        </div>
+        <div class="sections">
+          <ul>
+            <li class="icons">
+              <img src="assets/ShoppingCartSimple.svg" alt="Auctions" />
+              <p id="active">Auctions</p>
+            </li>
+            <li class="icons">
+              <img src="assets/Trophy.svg" alt="Contests" />
+              <p>Contests</p>
+            </li>
+            <li class="icons">
+              <img src="assets/Briefcase.svg" alt="Project" />
+              <p>Project</p>
+            </li>
+            <li class="icons">
+              <img src="assets/Image.svg" alt="Portfolios" />
+              <p>Portfolios</p>
+            </li>
+            <li class="icons">
+              <img src="assets/UsersThree.svg" alt="Freelancers" />
+              <p>Freelancers</p>
+            </li>
+            <li class="icons">
+              <img src="assets/Chats.svg" alt="Forum" />
+              <p>Forum</p>
+            </li>
+          </ul>
+        </div>
+        <div class="user">
+          <li>
+            <img src="assets/ChatCircleDots.svg" alt="chat" />
+          </li>
+          <li>
+            <img src="assets/Group 1000001500.svg" alt="notifications" />
+          </li>
+          <li>
+            <img id="profile" src="assets/PosterAvatar.svg" alt="user" />
+            <div class="dropdown">
+              <div class="info">
+                <img src="assets/PosterAvatar.svg" alt="" />
+                <div class="text">
+                  <p>Ahmed Ali</p>
+                  <p>Student</p>
+                </div>
+              </div>
+              <div>
+                <img src="assets/UserCircle.svg" alt="" />
+                <p>My Profile</p>
+              </div>
+              <div class="dark-mode-toggle">
+                <div>
+                  <img src="assets/Moon.svg" alt="" />
+                  <p>Dark Mode</p>
+                </div>
+                <label class="switch">
+                  <input type="checkbox" id="darkModeToggle" />
+                  <span class="slider round"></span>
+                </label>
+              </div>
+              <div class="language-dropdown">
+                <div>
+                  <img src="assets/Translate.svg" alt="" />
+                  <p>Language</p>
+                </div>
+                <div class="dropdown">
+                  <div>
+                    <p>العربية</p>
+                    <img src="assets/Saudi.svg" alt="" />
+                  </div>
+                </div>
+              </div>
+              <div>
+                <img src="assets/GearSix.svg" alt="" />
+                <p>Account Settings</p>
+              </div>
+              <div>
+                <img src="assets/SignOut.svg" alt="" />
+                <p id="logout">Logout</p>
+              </div>
+            </div>
+          </li>
+        </div>
+      </div>
+      <div class="mobile-nav">
+        <div class="logo" id="logo">
+          <img src="assets/main-logo2 1.svg"  alt="" />
+        </div>
+        <div class="menu-icon" id="menuIcon" onclick="toggleMenu()">
+          <i class="fa-solid fa-bars fa-2xl"></i>
+        </div>
+        <div class="menu scale-up-ver-center" id="mobileMenu">
+          <div class="close-icon" onclick="toggleMenu()">
+            <i class="fa-solid fa-xmark fa-2xl"></i>
+          </div>
+          <div class="menu-item">
+            <img src="assets/ShoppingCartSimple.svg" alt="Auctions" />
+            <p id="active">Auctions</p>
+          </div>
+          <div class="menu-item">
+            <img src="assets/Trophy.svg" alt="Contests" />
+            <p>Contests</p>
+          </div>
+          <div class="menu-item">
+            <img src="assets/Briefcase.svg" alt="Project" />
+            <p>Project</p>
+          </div>
+          <div class="menu-item">
+            <img src="assets/Image.svg" alt="Portfolios" />
+            <p>Portfolios</p>
+          </div>
+          <div class="menu-item">
+            <img src="assets/UsersThree.svg" alt="Freelancers" />
+            <p>Freelancers</p>
+          </div>
+          <div class="menu-item">
+            <img src="assets/Chats.svg" alt="Forum" />
+            <p>Forum</p>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!--Navigation Bar Ends-->
+    <!--Main-->
+    <main>
+      <section>
+        <div class="intro">
+          <p>Design / Logo Design</p>
+          <h3 class="Heading">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam nisi,
+            cras neque Lorem ipsum dolor sit amet,
+          </h3>
+          <div class="rating">
+            <div class="stars">
+              <img src="assets/Rating.svg" alt="" />
+              <p>4.1 (500)</p>
+            </div>
+            <div class="social">
+              <img src="assets/ShareNetwork.svg" alt="" />
+              <img src="assets/Heart.svg" alt="" />
+            </div>
+          </div>
+          <swiper-container
+            class="mySwiper"
+            pagination="true"
+            navigation="true"
+          >
+            <swiper-slide>
+              <img src="assets/Rectangle 8.png" alt="" />
+            </swiper-slide>
+            <swiper-slide>
+              <img src="assets/Rectangle 8.png" alt="" />
+            </swiper-slide>
+            <swiper-slide>
+              <img src="assets/Rectangle 8.png" alt="" />
+            </swiper-slide>
+          </swiper-container>
+          <div class="description">
+            <h3 class="Heading">Description</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam
+              nisi, cras neque Lorem ipsum dolor sit amet, Lorem ipsum dolor sit
+              amet, consectetur adipiscing elit. Diam nisi, cras neque Lorem
+              ipsum dolor sit amet, Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit. Diam nisi, cras neque Lorem ipsum dolor sit amet,
+              Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet,
+              consectetur adipiscing elit. Diam nisi, cras neque Lorem ipsum
+              dolor sit amet.
+            </p>
+          </div>
+          <div class="services">
+            <div class="heading">
+              <h3 class="Heading">Service Add-Ons</h3>
+              <span id="selectAll">
+                <img src="assets/Vector.svg" alt="" />
+                Select All
+              </span>
+            </div>
+            <div class="body">
+              <div class="service">
+                <div class="check">
+                  <input type="checkbox" />Lorem ipsum dolor sit amet,
+                  consectetur adipiscing elit. Diam nisi, cras neque Lorem ipsum
+                  dolor sit amet, Lorem ipsum dolor sit amet.
+                </div>
+                <div class="price">
+                  <h5 class="green">$100</h5>
+                  <h5 class="green">2 Days</h5>
+                </div>
+              </div>
+              <div class="service">
+                <div class="check">
+                  <input type="checkbox" />Lorem ipsum dolor sit amet,
+                  consectetur adipiscing elit. Diam nisi, cras neque Lorem ipsum
+                  dolor sit amet, Lorem ipsum dolor sit amet.
+                </div>
+                <div class="price">
+                  <h5 class="green">$100</h5>
+                  <h5 class="green">2 Days</h5>
+                </div>
+              </div>
+              <div class="service">
+                <div class="check">
+                  <input type="checkbox" />Lorem ipsum dolor sit amet,
+                  consectetur adipiscing elit. Diam nisi, cras neque Lorem ipsum
+                  dolor sit amet, Lorem ipsum dolor sit amet.
+                </div>
+                <div class="price">
+                  <h5 class="green">$100</h5>
+                  <h5 class="green">2 Days</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="purchase">
+            <h3 class="Heading">Purchase Service</h3>
+            <div class="order">
+              <div class="counter">
+                <img src="assets/Group 34402.svg" class="down-arrow" alt="" />
+                <h3>0</h3>
+                <img src="assets/Group 34401.svg" class="up-arrow" alt="" />
+              </div>
+              <div class="cost">
+                <h3>0</h3>
+              </div>
+              <div class="button">
+                <button>Purchase</button>
+              </div>
+            </div>
+          </div>
+          <div class="ratings">
+            <h3 class="Heading">
+              <img src="assets/Star.svg" alt="" />
+              4.6 Service Rating . 46 Ratings
+            </h3>
+            <div class="wrapper">
+              <div class="details">
+                <div class="row">
+                  <h5>Work Quality</h5>
+                  <img src="assets/Star.svg" alt="" />
+                  <h5>5.0</h5>
+                </div>
+                <img src="assets/Rating.svg" alt="" />
+                <div class="progress-bar">
+                  <div><span></span></div>
+                  <h5>4</h5>
+                </div>
+              </div>
+              <div class="details">
+                <div class="row">
+                  <h5>Communication & Collaboration</h5>
+                  <img src="assets/Star.svg" alt="" />
+                  <h5>5.0</h5>
+                </div>
+                <img src="assets/Rating.svg" alt="" />
+                <div class="progress-bar">
+                  <div><span></span></div>
+                  <h5>4</h5>
+                </div>
+              </div>
+              <div class="details">
+                <div class="row">
+                  <h5>Adherence to Schedule</h5>
+                  <img src="assets/Star.svg" alt="" />
+                  <h5>5.0</h5>
+                </div>
+                <img src="assets/Rating.svg" alt="" />
+                <div class="progress-bar">
+                  <div><span></span></div>
+                  <h5>4</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="reviews">
+            <div class="wrapper">
+              <div class="review">
+                <div>
+                  <img src="assets/PosterAvatar2.svg" alt="" />
+                  <div class="name">
+                    <h5>Jane Smith</h5>
+                    <div class="time">
+                      <img src="assets/Rating.svg" alt="" />
+                      <p>30m</p>
+                    </div>
+                  </div>
+                </div>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam
+                  nisi, cras neque Lorem ipsum dolor sit amet,Lorem ipsum dolor
+                  sit amet, consectetur adipiscing elit.... Lorem ipsum dolor
+                  sit amet, consectetur adipiscing elit. Diam nisi, cras neque
+                  Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,
+                  consectetur adipiscing elit....
+                </p>
+              </div>
+              <div class="review">
+                <div>
+                  <img src="assets/PosterAvatar2.svg" alt="" />
+                  <div class="name">
+                    <h5>Jane Smith</h5>
+                    <div class="time">
+                      <img src="assets/Rating.svg" alt="" />
+                      <p>30m</p>
+                    </div>
+                  </div>
+                </div>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam
+                  nisi, cras neque Lorem ipsum dolor sit amet,Lorem ipsum dolor
+                  sit amet, consectetur adipiscing elit.... Lorem ipsum dolor
+                  sit amet, consectetur adipiscing elit. Diam nisi, cras neque
+                  Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,
+                  consectetur adipiscing elit....
+                </p>
+              </div>
+              <div class="review">
+                <div>
+                  <img src="assets/PosterAvatar2.svg" alt="" />
+                  <div class="name">
+                    <h5>Jane Smith</h5>
+                    <div class="time">
+                      <img src="assets/Rating.svg" alt="" />
+                      <p>30m</p>
+                    </div>
+                  </div>
+                </div>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam
+                  nisi, cras neque Lorem ipsum dolor sit amet,Lorem ipsum dolor
+                  sit amet, consectetur adipiscing elit.... Lorem ipsum dolor
+                  sit amet, consectetur adipiscing elit. Diam nisi, cras neque
+                  Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,
+                  consectetur adipiscing elit....
+                </p>
+              </div>
+              <div class="message">
+                <img src="assets/PosterAvatar.svg" alt="" />
+                <div class="input">
+                  <input type="text" placeholder="Write your review in here" />
+                  <button>Post Review</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="right">
+          <div class="first">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum
+              consectetur quas labore exercitationem quia! Ullam, commodi
+              voluptatem. Illum optio eius eaque quasi voluptatum? Accusantium,
+              excepturi!
+            </p>
+            <div class="icons-wrapper">
+              <div class="icons">
+                <img src="assets/Medal.svg" alt="" />
+              </div>
+              <div class="icons">
+                <img src="assets/SignIn.svg" alt="" />
+              </div>
+              <div class="icons">
+                <img src="assets/IdentificationCard.svg" alt="" />
+              </div>
+            </div>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam
+              Lorem ipsum dolor sit amet..
+            </p>
+            <div class="button">
+              <button>Contact me</button>
+            </div>
+          </div>
+          <div class="second">
+            <p>Info</p>
+            <div class="content">
+              <div class="left">
+                <img src="assets/CurrencyCircleDollar.svg" alt="" />
+                <p>Price</p>
+              </div>
+              <div class="col">
+                <p>$10</p>
+              </div>
+            </div>
+            <div class="content">
+              <div class="left">
+                <img src="assets/Clock.svg" alt="" />
+                <p>Delivery Duration</p>
+              </div>
+              <div class="col">
+                <p>1 day</p>
+              </div>
+            </div>
+            <div class="content">
+              <div class="left">
+                <img src="assets/Basket.svg" alt="" />
+                <p>In Progress Orders</p>
+              </div>
+              <div class="col">
+                <p>2</p>
+              </div>
+            </div>
+            <div class="content">
+              <div class="left">
+                <img src="assets/Users.svg" alt="" />
+                <p>Customers</p>
+              </div>
+              <div class="col">
+                <p>2</p>
+              </div>
+            </div>
+            <div class="content">
+              <div class="left">
+                <img src="assets/Percent.svg" alt="" />
+                <p>Sales</p>
+              </div>
+              <div class="col">
+                <p>$25</p>
+              </div>
+            </div>
+            <div class="content">
+              <div class="left">
+                <img src="assets/ListDashes.svg" alt="" />
+                <p>Category</p>
+              </div>
+              <div class="col">
+                <p>Design</p>
+              </div>
+            </div>
+            <div class="content">
+              <div class="left">
+                <img src="assets/ListDashes.svg" alt="" />
+                <p>Subcategory</p>
+              </div>
+              <div class="col">
+                <p>Logo Design</p>
+              </div>
+            </div>
+          </div>
+          <div class="third">
+            <p>Share & Earn</p>
+            <div class="social">
+              <img src="assets/linkedin.png" alt="" />
+              <img src="assets/facebook.png" alt="" />
+              <img src="assets/whatsapp.png" alt="" />
+              <img src="assets/twitter.png" alt="" />
+              <img src="assets/Group 8649.svg" alt="" />
+            </div>
+          </div>
+          <div class="fourth">
+            <div class="heading">
+              <h3>Seller Other Services</h3>
+              <p>See more</p>
+            </div>
+            <div class="core">
+              <img src="assets/Rectangle 10883.png" alt="" />
+              <div class="data">
+                <p>
+                  Lorem ipsum dolor sit ame, consecteturLorem ipsum dolor...
+                </p>
+                <div class="line">
+                  <div>
+                    <img src="assets/Star.svg" alt="" />
+                    <p class="grey">4.5 (50)</p>
+                    <img src="assets/Tag.svg" alt="" />
+                    <p>$10</p>
+                  </div>
+                  <div class="heart">
+                    <img src="assets/Heart.svg" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="core">
+              <img src="assets/Rectangle 10883.png" alt="" />
+              <div class="data">
+                <p>
+                  Lorem ipsum dolor sit ame, consecteturLorem ipsum dolor...
+                </p>
+                <div class="line">
+                  <div>
+                    <img src="assets/Star.svg" alt="" />
+                    <p class="grey">4.5 (50)</p>
+                    <img src="assets/Tag.svg" alt="" />
+                    <p>$10</p>
+                  </div>
+                  <div class="heart">
+                    <img src="assets/Heart.svg" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="core">
+              <img src="assets/Rectangle 10883.png" alt="" />
+              <div class="data">
+                <p>
+                  Lorem ipsum dolor sit ame, consecteturLorem ipsum dolor...
+                </p>
+                <div class="line">
+                  <div>
+                    <img src="assets/Star.svg" alt="" />
+                    <p class="grey">4.5 (50)</p>
+                    <img src="assets/Tag.svg" alt="" />
+                    <p>$10</p>
+                  </div>
+                  <div class="heart">
+                    <img src="assets/Heart.svg" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="suggest">
+        <div class="heading">
+          <h3 class="Heading">Suggested Services</h3>
+          <p>See more</p>
+        </div>
+        <div class="cards-wrapper">
+          <div class="card">
+            <div class="top">
+              <img src="assets/Rectangle 10882.png" alt="" />
+            </div>
+            <div class="bottom">
+              <h5>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit...
+              </h5>
+              <div class="cart">
+                <img src="assets/Star.svg" alt="" />
+                <p>4.9</p>
+                <img src="assets/ShoppingCartSimplegrey.svg" alt="" />
+                <p>300</p>
+              </div>
+              <div class="account">
+                <div class="tag">
+                  <img src="assets/PosterAvatar2.svg" alt="" />
+                  <p>Jane Smith</p>
+                </div>
+                <div class="tag">
+                  <img src="assets/Tag.svg" alt="" />
+                  <p>$10</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="top">
+              <img src="assets/Rectangle 10882.png" alt="" />
+            </div>
+            <div class="bottom">
+              <h5>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit...
+              </h5>
+              <div class="cart">
+                <img src="assets/Star.svg" alt="" />
+                <p>4.9</p>
+                <img src="assets/ShoppingCartSimplegrey.svg" alt="" />
+                <p>300</p>
+              </div>
+              <div class="account">
+                <div class="tag">
+                  <img src="assets/PosterAvatar2.svg" alt="" />
+                  <p>Jane Smith</p>
+                </div>
+                <div class="tag">
+                  <img src="assets/Tag.svg" alt="" />
+                  <p>$10</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="top">
+              <img src="assets/Rectangle 10882.png" alt="" />
+            </div>
+            <div class="bottom">
+              <h5>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit...
+              </h5>
+              <div class="cart">
+                <img src="assets/Star.svg" alt="" />
+                <p>4.9</p>
+                <img src="assets/ShoppingCartSimplegrey.svg" alt="" />
+                <p>300</p>
+              </div>
+              <div class="account">
+                <div class="tag">
+                  <img src="assets/PosterAvatar2.svg" alt="" />
+                  <p>Jane Smith</p>
+                </div>
+                <div class="tag">
+                  <img src="assets/Tag.svg" alt="" />
+                  <p>$10</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="top">
+              <img src="assets/Rectangle 10882.png" alt="" />
+            </div>
+            <div class="bottom">
+              <h5>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit...
+              </h5>
+              <div class="cart">
+                <img src="assets/Star.svg" alt="" />
+                <p>4.9</p>
+                <img src="assets/ShoppingCartSimplegrey.svg" alt="" />
+                <p>300</p>
+              </div>
+              <div class="account">
+                <div class="tag">
+                  <img src="assets/PosterAvatar2.svg" alt="" />
+                  <p>Jane Smith</p>
+                </div>
+                <div class="tag">
+                  <img src="assets/Tag.svg" alt="" />
+                  <p>$10</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!--Main Ends-->
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+  </body>
+</html>
